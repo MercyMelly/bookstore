@@ -117,7 +117,7 @@ CREATE TABLE order_line (
 CREATE TABLE order_history (
     order_history_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
-    status_id INT,
+    order_status_id INT,
     change_date DATE,
     FOREIGN KEY (order_id) REFERENCES cust_order(order_id),
     FOREIGN KEY (status_id) REFERENCES order_status(order_status_id)
