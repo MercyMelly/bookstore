@@ -12,12 +12,6 @@ GRANT INSERT, UPDATE, DELETE ON bookstore.book_author TO 'manager_role';
 GRANT INSERT, UPDATE, DELETE ON bookstore.book_language TO 'manager_role';
 
 
-GRANT SELECT, INSERT, UPDATE, DELETE ON bookstore.* TO 'manager_role';
-REVOKE INSERT, UPDATE, DELETE ON bookstore.country FROM 'manager_role';
-REVOKE INSERT, UPDATE, DELETE ON bookstore.book_language FROM 'manager_role';
-REVOKE INSERT, UPDATE, DELETE ON bookstore.address_status FROM 'manager_role';
-REVOKE INSERT, UPDATE, DELETE ON bookstore.order_status FROM 'manager_role';
-
 --  staff role ..promise
 GRANT SELECT ON bookstore.* TO 'staff_role';
 GRANT INSERT, UPDATE ON bookstore.book TO 'staff_role';
