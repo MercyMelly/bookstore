@@ -28,3 +28,4 @@ and running the test queries.
 * queries.sql
 * user_roles.sql
 * test_queries.sql
+* bookstore.drawio
